@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Crossmed - dystrybucja sprzętu medycznego</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/fontello.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel>
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="assets/logo_crossmed.jpg">
+        </header>
+        <nav>
+            <a class="navElement" id="navMicroPort">MicroPort</a>
+
+            <a class="navElement" id="navVUP">VUP medical</a>
+
+            <a class="navElement" id="navAxiobio">Axiobio</a>
+
+            <a class="navElement" id="navKontakt">Kontakt</a>
+        </nav>
+        <section class="about_us">
+            <h1>
+                O nas
+            </h1>
+            <article>
+
+                Crossmed jest partnerem biznesowym największych na świecie producentów sprzętu medycznego.
+                Łącząc ludzi z ogromnym doświadczeniem i wiedzą dotyczącą branży medycznej stworzyliśmy profesjonalną i godną zaufania firmę gotową zaopatrywać w najwyższej klasy sprzęt medyczny podmioty gospodarcze sektora publicznej oraz niepublicznej ochrony zdrowia.
+            </article>
+        </section>
+        <h1 id="partners">
+            Partnerzy
+        </h1>
+
+        <section class="company" id="MicroPort">
+
+
+            <article>
+                <h2>
+                    MicroPort
+                    <a href="https://www.microport.com/" target="_blank"><img src="assets/pictures/MicroPort-logo.png"></a>
+                </h2>
+
+                MicroPort to globalny producent urządzeń medycznych z siedzibą w Szanghaju w Chinach. Projektuje i wytwarza produkty dla szeregu dziedzin medycyny, w tym kardiologii, radiologii interwencyjnej, ortopedii, elektrofizjologii i leczenia chirurgicznego. MicroPort jest uważany za jedną z 100 największych firm produkujących urządzenia medyczne w 2018 roku i został wybrany jako China Innovative Medical Device Company.
+            </article>
+
+            <img src="assets/pictures/MicroPort-product.png">
+
+
+
+
+        </section>
+
+        <section class="company" id="VUP">
+
+
+            <article>
+                <h2>
+                    VUP Medical
+                    <a href="https://www.vup.cz/en-us/" target="_blank"><img src="assets/pictures/VUP-logo.png"></a>
+                </h2>
+                Czeski producent dzianych protez naczyniowych, siatek przepuklinowych oraz innych wszczepialnych i niewszczepialnych wyrobów medycznych.<br>
+                We współpracy z czołowymi czeskimi uniwersytetami i chirurgami VUP od ponad 70 lat bierze udział w ciągłym unowocześnianiu i rozwijaniu wyrobów medycznych.
+            </article>
+
+            <img src="assets/pictures/VUP-product2.JPG">
+
+        </section>
+
+        <section class="company" id="Axiobio">
+
+
+            <article>
+                <h2>
+                    Axiobio
+                    <a href="https://axiobio.com/" target="_blank"><img src="assets/pictures/Axiobio-logo.png"></a>
+                </h2>
+
+                Axio jest firmą zajmującą się technologią medyczną opartą na głębokiej wiedzy naukowej i posiadającą rozległą wiedzę specjalistyczną w zakresie urządzeń medycznych opartych na biomateriałach do przedszpitalnych, śródoperacyjnych i pooperacyjnych potrzeb klinicznych. Skupia się na urządzeniach do leczenia urazów, ran chirurgicznych i przewlekłych.
+            </article>
+
+            <img src="assets/pictures/Axiobio-product.jpg">
+
+
+        </section>
+
+
+
+        <section class="contact" id="kontakt">
+            <h3>
+                Zadzwoń do nas
+            </h3>
+
+            <a href="tel:721080361"><button> +48 721 080 361</button></a>
+
+            <p>
+                lub
+            </p>
+
+            <h3>
+                Zostaw wiadomość
+            </h3>
+
+            <form action="send.php" method="post" class="e-mail">
+                <input type="text" name="email" placeholder="Twój email" />
+
+                <textarea name="wiadomosc" cols="40" rows="8" placeholder="Wiadomość"></textarea>
+
+                <input type="submit" value="Wyślij" />
+            </form>
+        </section>
+        <div class="footerBorder"></div>
+        <footer>
+            <section id="address">
+                <i class="icon-globe"></i>
+                <h4>Adres</h4>
+                <article>
+                    Crossmed Sp z o.o.<br>
+                    ul. Poziomkowa 3A<br>
+                    Swarzędz 62-020<br>
+                </article>
+            </section>
+            <section id="emailAddress">
+                <i class="icon-phone"></i>
+                <h4>E-mail</h4>
+                <article>
+                    office@crossmed.com.pl
+                </article>
+            </section>
+
+            <section id="telephone">
+                <i class="icon-mail-alt"></i>
+                <h4>Numer kontaktowy</h4>
+                <article>
+                    biuro: 662 335 621
+                </article>
+            </section>
+        </footer>
+
+    </main>
+    <script>
+        //                var imgEvenD = img1[0].getBoundingClientRect().top;
+        //            if (img1D < position) {
+        //                document.querySelector('.company:nth-child(even) img').classList.add("animate__animated");
+        //                document.querySelector('.company:nth-child(even) img').classList.add("animate__fadeInLeft");
+        //                document.querySelector('.company:nth-child(even) h2').classList.add("animate__animated");
+        //                document.querySelector('.company:nth-child(even) h2').classList.add("animate__fadeInRight");
+        //                document.querySelector('.company:nth-child(even) article').classList.add("animate__animated");
+        //                document.querySelector('.company:nth-child(even) article').classList.add("animate__fadeInRight");
+        function ScrollAppear() { // 
+            var position = window.innerHeight / 1.2;
+            var imgEven = document.querySelectorAll('.company:nth-child(even) > img');
+            var imgOdd = document.querySelectorAll('.company:nth-child(odd) > img');
+            var articleEven = document.querySelectorAll('.company:nth-child(even) article');
+            var articleOdd = document.querySelectorAll('.company:nth-child(odd) article');
+            var h2Even = document.querySelectorAll('.company:nth-child(even) h2 ');
+            var h2Odd = document.querySelectorAll('.company:nth-child(odd) h2 ');
+            //var h1partners = document.querySelector('#partners');
+
+
+
+
+            function assignAnimation(object, animation_id, amount) {
+                for (var i = 0; i < amount; i++) {
+                    //let helper = object[i];
+                    let objectD = object[i].getBoundingClientRect().top;
+                    //let objectD = this.getBoundingClientRect();
+                    if (objectD < position) {
+                        object[i].classList.add("animate__animated");
+                        object[i].classList.add(animation_id);
+                    }
+                }
+            }
+            //            for (i in imgEven) {
+            //                var imgEvenD = imgEven[i].getBoundingClientRect().top;
+            //                if (imgEvenD < position) {
+            //                    imgEven[i].clasList.add("animate__animated");
+            //                    imgEven[i].clasList.add("animate__fadeInLeft");
+            //                }
+            //            }
+            assignAnimation(imgEven, "animate__fadeInLeft", imgEven.length);
+            assignAnimation(imgOdd, "animate__fadeInRight", imgOdd.length);
+            assignAnimation(articleOdd, "animate__fadeInLeft", articleOdd.length);
+            assignAnimation(articleEven, "animate__fadeInRight", articleEven.length);
+            assignAnimation(h2Even, "animate__fadeInRight", h2Even.length);
+            assignAnimation(h2Odd, "animate__fadeInLeft", h2Odd.length);
+            //assignAnimation(h1partners, "animate__fadeInLeft", 1);
+        }
+
+
+        window.addEventListener('scroll', ScrollAppear);
+        window.onload = function() {
+            ScrollAppear();
+            document.querySelector('.about_us').classList.add("animate__animated");
+            document.querySelector('.about_us').classList.add("animate__bounce");
+            document.querySelector('.about_us').style.opacity = 1;
+            document.querySelector('.about_us').style.transition = " opacity 0.6s ease-in-out";
+
+            document.querySelector('#partners').classList.add("animate__animated");
+            document.querySelector('#partners').classList.add("animate__fadeIn");
+
+
+        }
+
+
+        function clickScroll(source, destination) {
+            document.getElementById(source).addEventListener("click", function() {
+                document.getElementById(destination).scrollIntoView({
+                    behavior: "smooth",
+                    block: "end"
+                });
+            })
+        }
+        clickScroll("navVUP", "VUP");
+        clickScroll("navMicroPort", "MicroPort");
+        clickScroll("navAxiobio", "Axiobio");
+        clickScroll("navAxiobio", "Axiobio");
+        clickScroll("navKontakt", "kontakt");
+
+    </script>
+</body>
+
+</html>
