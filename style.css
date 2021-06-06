@@ -671,6 +671,7 @@ footer {
 
     textarea {
         height: 20vw;
+        width: 55vw;
     }
 
     input[type=submit] {
@@ -695,6 +696,97 @@ footer {
         padding-bottom: 0.8vw;
         padding-top: 0.8vw;
     }
+}
+
+@media (max-width:750px) {
+    * {
+        font-size: 2vw;
+    }
+
+    .about_us {
+        width: 75vw;
+    }
+
+    .company article {
+        width: 56vw;
+    }
+
+    .company:nth-child(odd) article {
+        left: -17vw;
+    }
+
+    .company:nth-child(even) article {
+        left: 21vw;
+    }
+
+    #partners {
+        margin-bottom: 6vw;
+    }
+
+    #MicroPort > img {
+        left: 68vw;
+        top: -4vw;
+        width: 29vw;
+    }
+
+    #VUP > img {
+        left: 6vw;
+        width: 32vw;
+        top: -4vw;
+    }
+
+    #Axiobio > img {
+        width: 33vw;
+    }
+
+    #MicroPort h2 img {
+        right: 16vw;
+        width: 19vw;
+
+    }
+
+    #VUP h2 img {
+        right: 18vw;
+        width: 14vw;
+        top: -1.8vw;
+    }
+
+    #Axiobio h2 img {
+        right: 18vw;
+        width: 14vw;
+        top: -1.5vw;
+
+    }
+
+    .contact > a {
+        width: 28vw;
+        height: 6vw;
+    }
+
+    input[type=text] {
+        width: 55vw;
+        height: 5vw;
+    }
+
+    textarea {
+        height: 20vw;
+        width: 55vw;
+    }
+
+    input[type=submit] {
+        width: 55vw;
+        height: 6vw;
+    }
+
+    .company img {
+        width: 21vw;
+    }
+
+
+
+
+
+
 }
 
 @font-face {
