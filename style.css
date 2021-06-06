@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 0.68vw;
 }
 
 header img {
@@ -19,6 +20,7 @@ header img {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 15vw;
 }
 
 .company article {
@@ -55,7 +57,17 @@ nav {
     padding-left: 6vw;
     padding-right: 6vw;
     transition: 0.5s ease-in-out;
+    cursor: pointer;
 
+}
+
+.navElement:link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.navElement:visited {
+    color: inherit;
 }
 
 .navElement:hover {
@@ -82,11 +94,15 @@ h1 {
 #partners {
     opacity: 0;
     margin-bottom: 5vw;
+    transition: ease-in-out;
 }
 
 h2 {
     margin-bottom: 1vw;
+    font-size: 1.35em;
 }
+
+
 
 /*   company even*/
 .company:nth-child(even) article {
@@ -167,8 +183,43 @@ h2 {
 #Axiobio h2 img {
     position: absolute;
     width: 9vw;
-    top: -1.5vw;
+    top: -1vw;
     right: 5.7vw;
+}
+
+#Axiobio > img {
+    position: absolute;
+    top: -3vw;
+    left: 57vw;
+
+
+}
+
+#Axiobio {
+    position: relative;
+}
+
+
+#VUP > img {
+    position: absolute;
+    top: -2.5vw;
+    left: 25vw;
+}
+
+
+#VUP {
+    position: relative;
+}
+
+#MicroPort {
+
+    position: relative;
+}
+
+#MicroPort > img {
+    position: absolute;
+    top: -3vw;
+    left: 56vw;
 }
 
 /*contact*/
@@ -188,15 +239,12 @@ h3 {
     font-size: 1.2em;
 }
 
-.contact > a button {
+.contact > a {
     width: 9vw;
     height: 2vw;
-    background-color: #eb6325;
-    color: white;
-    font-size: 1.2em;
-    border-radius: 2%;
-    border: 0px;
-    transition: 0.2s ease-in-out;
+
+
+
     margin-top: 2vw;
     margin-bottom: 2vw;
 }
@@ -204,6 +252,16 @@ h3 {
 .contact > a button:hover {
     background-color: #f06e32;
 
+}
+
+.contact > a button {
+    color: white;
+    width: inherit;
+    height: inherit;
+    border: 0px;
+    background-color: #eb6325;
+    font-size: 1.2em;
+    transition: 0.2s ease-in-out;
 }
 
 .contact h3:last-of-type {
@@ -223,13 +281,29 @@ input[type=text] {
     height: 2vw;
     margin-bottom: 1vw;
     border: 1px solid #24397c;
+    padding-left: 1%;
+}
+
+input[type=text]::placeholder {
+    display: flex;
+    align-items: center;
 }
 
 textarea {
     margin-bottom: 1vw;
     height: 10vw;
     border: 1px solid #24397c;
+    cursor: text;
+    padding-left: 1%;
+    padding-top: 1%;
 }
+
+textarea::placeholder {
+    position: absolute;
+    left: 1%;
+    top: 4%;
+}
+
 
 input[type=submit] {
     width: 28vw;
@@ -249,6 +323,7 @@ input[type=submit]:hover {
 
 
 }
+
 
 /*footer*/
 
@@ -270,6 +345,259 @@ footer {
 
 }
 
+
+
+@media (max-width:2000px) {
+    * {
+        font-size: 0.9vw;
+    }
+
+    .about_us {
+        width: 40vw;
+    }
+
+    .company article {
+        width: 30vw;
+    }
+
+    .company:nth-child(odd) article {
+        left: -18vw;
+    }
+
+    .company:nth-child(even) article {
+        left: 18vw;
+    }
+
+    #MicroPort > img {
+        left: 59vw;
+    }
+
+    #VUP > img {
+        left: 21vw;
+    }
+
+    #Axiobio > img {
+        left: 59vw;
+    }
+
+    #MicroPort h2 img {
+        right: 10vw;
+    }
+
+    #VUP h2 img {
+        right: 10vw;
+    }
+
+    #Axiobio h2 img {
+        right: 10vw;
+    }
+
+    .contact > a {
+        width: 12vw;
+        height: 3vw;
+    }
+
+    input[type=text] {
+        width: 35vw;
+        height: 3vw;
+    }
+
+    textarea {
+        height: 13vw;
+    }
+
+    input[type=submit] {
+        width: 35vw;
+        height: 3vw;
+    }
+
+    .company img {
+        width: 17vw;
+    }
+
+}
+
+@media (max-width:1400px) {
+    * {
+        font-size: 1.1vw;
+    }
+
+    .about_us {
+        width: 45vw;
+    }
+
+    .company article {
+        width: 38vw;
+    }
+
+    .company:nth-child(odd) article {
+        left: -20vw;
+    }
+
+    .company:nth-child(even) article {
+        left: 20vw;
+    }
+
+    #partners {
+        margin-bottom: 6vw;
+    }
+
+    #MicroPort > img {
+        left: 59vw;
+        top: -4vw;
+    }
+
+    #VUP > img {
+        left: 14vw;
+        width: 25vw;
+        top: -4vw;
+    }
+
+    #Axiobio > img {
+        left: 57vw;
+        width: 24vw;
+        top: -7vw;
+    }
+
+    #MicroPort h2 img {
+        right: 13vw;
+        width: 12vw;
+    }
+
+    #VUP h2 img {
+        right: 12vw;
+        width: 9.5vw;
+    }
+
+    #Axiobio h2 img {
+        right: 15vw;
+        width: 11vw;
+        top: -1.2vw;
+
+    }
+
+    .contact > a {
+        width: 15vw;
+        height: 3.6vw;
+    }
+
+    input[type=text] {
+        width: 42vw;
+        height: 3.5vw;
+    }
+
+    textarea {
+        height: 16vw;
+    }
+
+    input[type=submit] {
+        width: 42vw;
+        height: 3.5vw;
+    }
+
+    .company img {
+        width: 21vw;
+    }
+
+    .company {
+        padding-bottom: 17vw;
+    }
+
+}
+
+@media (max-width:1100px) {
+    * {
+        font-size: 1.4vw;
+    }
+
+    .about_us {
+        width: 55vw;
+    }
+
+    .company article {
+        width: 44vw;
+    }
+
+    .company:nth-child(odd) article {
+        left: -21vw;
+    }
+
+    .company:nth-child(even) article {
+        left: 21vw;
+    }
+
+    #partners {
+        margin-bottom: 6vw;
+    }
+
+    #MicroPort > img {
+        left: 62vw;
+        top: -4vw;
+        width: 24vw;
+    }
+
+    #VUP > img {
+        left: 11vw;
+        width: 27vw;
+        top: -4vw;
+    }
+
+    #Axiobio > img {
+        left: 60vw;
+        width: 27vw;
+        top: -7vw;
+    }
+
+    #MicroPort h2 img {
+        right: 13vw;
+        width: 15vw;
+
+    }
+
+    #VUP h2 img {
+        right: 14vw;
+        width: 10.5vw;
+    }
+
+    #Axiobio h2 img {
+        right: 15vw;
+        width: 11vw;
+        top: -1.2vw;
+
+    }
+
+    .contact > a {
+        width: 24vw;
+        height: 4.8vw;
+    }
+
+    input[type=text] {
+        width: 50vw;
+        height: 4.8vw;
+    }
+
+    textarea {
+        height: 20vw;
+    }
+
+    input[type=submit] {
+        width: 50vw;
+        height: 4.8vw;
+    }
+
+    .company img {
+        width: 21vw;
+    }
+
+    .company {
+        padding-bottom: 17vw;
+    }
+
+    footer {
+        margin-left: 12vw;
+        margin-right: 12vw;
+    }
+}
 
 @font-face {
     font-family: "Poppins";
