@@ -3,10 +3,14 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
     <title>Crossmed - dystrybucja sprzętu medycznego</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="assets/css/fontello.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" href="assets/favicon.png" />
+
     <link rel>
 </head>
 
@@ -16,11 +20,11 @@
             <img src="assets/logo_crossmed.jpg">
         </header>
         <nav>
-            <a class="navElement" id="navMicroPort">MicroPort</a>
+            <a href="https://www.microport.com/" target="_blank" class="navElement" id="navMicroPort">MicroPort</a>
 
-            <a class="navElement" id="navVUP">VUP medical</a>
+            <a href="https://www.vup.cz/en-us/" target="_blank" class="navElement" id="navVUP">VUP medical</a>
 
-            <a class="navElement" id="navAxiobio">Axiobio</a>
+            <a href="https://axiobio.com/" target="_blank" class="navElement" id="navAxiobio">Axiobio</a>
 
             <a class="navElement" id="navKontakt">Kontakt</a>
         </nav>
@@ -65,7 +69,7 @@
                     VUP Medical
                     <a href="https://www.vup.cz/en-us/" target="_blank"><img src="assets/pictures/VUP-logo.png"></a>
                 </h2>
-                Czeski producent dzianych protez naczyniowych, siatek przepuklinowych oraz innych wszczepialnych i niewszczepialnych wyrobów medycznych.<br>
+                VUP to czeski producent dzianych protez naczyniowych, siatek przepuklinowych oraz innych wszczepialnych i niewszczepialnych wyrobów medycznych.<br>
                 We współpracy z czołowymi czeskimi uniwersytetami i chirurgami VUP od ponad 70 lat bierze udział w ciągłym unowocześnianiu i rozwijaniu wyrobów medycznych.
             </article>
 
@@ -204,6 +208,7 @@
 
             document.querySelector('#partners').classList.add("animate__animated");
             document.querySelector('#partners').classList.add("animate__fadeIn");
+            document.querySelector('#partners').style.animationDuration = "2s";
 
 
         }
@@ -217,10 +222,10 @@
                 });
             })
         }
-        clickScroll("navVUP", "VUP");
-        clickScroll("navMicroPort", "MicroPort");
-        clickScroll("navAxiobio", "Axiobio");
-        clickScroll("navAxiobio", "Axiobio");
+        //        clickScroll("navVUP", "VUP");
+        //        clickScroll("navMicroPort", "MicroPort");
+        //        clickScroll("navAxiobio", "Axiobio");
+        //        clickScroll("navAxiobio", "Axiobio");
         clickScroll("navKontakt", "kontakt");
 
     </script>
