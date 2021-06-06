@@ -240,7 +240,7 @@ h3 {
 }
 
 .contact > a {
-    width: 9vw;
+    width: 12vw;
     height: 2vw;
 
 
@@ -688,8 +688,8 @@ footer {
     }
 
     footer {
-        margin-left: 12vw;
-        margin-right: 12vw;
+        margin-left: 7vw;
+        margin-right: 7vw;
     }
 
     .navElement {
@@ -764,17 +764,17 @@ footer {
     }
 
     input[type=text] {
-        width: 55vw;
+        width: 65vw;
         height: 5vw;
     }
 
     textarea {
         height: 20vw;
-        width: 55vw;
+        width: 65vw;
     }
 
     input[type=submit] {
-        width: 55vw;
+        width: 65vw;
         height: 6vw;
     }
 
@@ -782,11 +782,136 @@ footer {
         width: 21vw;
     }
 
+}
 
+@media (orientation:portrait) and (max-width:500px) {
+    * {
+        font-size: 3.8vw;
+    }
 
+    header img {
+        width: 60vw;
+    }
 
+    .navElement {
+        padding-bottom: 2vw;
+        padding-top: 2vw;
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
+    }
 
+    .about_us {
+        margin-top: 8vw;
+        margin-bottom: 10vw;
+    }
 
+    #partners {
+        margin-bottom: 12vw;
+    }
+
+    .company article {
+        width: 82vw;
+    }
+
+    .company:nth-child(odd) article {
+        left: 0;
+    }
+
+    .company:nth-child(even) article {
+        left: 0;
+    }
+
+    #MicroPort > img {
+        top: 80vw;
+        left: 20vw;
+        width: 60vw;
+    }
+
+    #MicroPort {
+        margin-bottom: 90vw;
+    }
+
+    #MicroPort h2 img {
+        width: 40vw;
+        right: 10vw;
+        top: -2vw;
+    }
+
+    #VUP > img {
+        top: 65vw;
+        left: 20vw;
+        width: 60vw;
+    }
+
+    #VUP {
+        margin-bottom: 65vw;
+    }
+
+    #VUP h2 img {
+        width: 31vw;
+        right: 13vw;
+        top: -6vw;
+    }
+
+    #Axiobio > img {
+        top: 65vw;
+        left: 20vw;
+        width: 60vw;
+    }
+
+    #Axiobio {
+        margin-bottom: 65vw;
+    }
+
+    #Axiobio h2 img {
+        width: 35vw;
+        top: -4vw;
+        right: 13vw;
+    }
+
+    .contact > a {
+        width: 52vw;
+        height: 11vw;
+        margin-bottom: 8vw;
+        margin-top: 6vw;
+    }
+
+    .contact h3:last-of-type {
+        margin-top: 8vw;
+        margin-bottom: 6vw;
+    }
+
+    input[type=text] {
+        width: 70vw;
+        height: 10vw;
+        margin-bottom: 4vw;
+    }
+
+    textarea {
+        width: 70vw;
+        height: 50vw;
+    }
+
+    input[type=submit] {
+        width: 70vw;
+        height: 10vw;
+        margin-top: 1.5vw;
+        margin-bottom: 10vw;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #address {
+        margin-top: 3vw;
+    }
+
+    footer section {
+        margin-bottom: 4vw;
+    }
 }
 
 @font-face {
