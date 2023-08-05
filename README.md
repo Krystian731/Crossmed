@@ -7,7 +7,7 @@
 
 ## General info
 This project is a quick, seamless website to present the company and the products it sells.
-Website is fully responsive. 
+Website is fully responsive. Site is availabe under this link: https://crossmed.com.pl/
 	
 ## Technologies
 Project is created with:
