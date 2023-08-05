@@ -6,8 +6,8 @@
 * [Setup](#setup)
 
 ## General info
-During my internship at the company, I was given the task of creating a quick, seamless website to present the company, the products it sells and contact form.
-I was resposible for UI/UX, code layer and deployment of the webiste. Website is fully responsive. 
+This project is a quick, seamless website to present the company and the products it sells.
+Website is fully responsive. 
 	
 ## Technologies
 Project is created with:
