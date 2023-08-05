@@ -14,6 +14,7 @@ Project is created with:
 * HTML 5
 * CSS 3
 * JS ES6
+* PHP 8.0
 	
 ## Setup
 To run this project:
